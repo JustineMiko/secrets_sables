@@ -1,6 +1,5 @@
 <?php
 /* Start global */
-    
     // Définis le menu d'en-tête
     register_nav_menus( array(
         'primary' => __( 'Menu principal', 'secrets-sables' ),
@@ -51,4 +50,14 @@
     }
     add_action('wp_enqueue_scripts', 'wpbootstrap_styles_scripts');
 /* End Bootsrap */
+/* Start Sidebar */
+register_sidebar( array(
+    'id' => 'social-widget',
+    'name' => 'Réseaux Sociaux',
+    'before_widget'  => '<div class="site__sidebar__widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title' => '<p class="site__sidebar__widget__title">',
+    'after_title' => '</p>',
+  ) );
+/* End Sidebar */
 ?>
