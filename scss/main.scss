@@ -1,0 +1,51 @@
+/** Bootstrap **/
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/** Base **/
+@import 'base';
+
+/** Layouts **/
+@import 'layout/header';
+@import 'layout/footer';
+
+
+/* variables de couleur */ 
+$backgroundcolor: #FEFBEB;
+$blackfont: #000000;
+$goldcolor: #BA8910;
+$whitefont: #FFFFFF; 
+
+
+/* Mobile first */
+
+body {
+    background-color: $backgroundcolor;
+    color: $blackfont;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Dancing Script', cursive;
+}
+
+a, li {
+    text-decoration: none;
+    color: $blackfont;
+    list-style-type: none;
+
+}
+
+button {
+    border-radius: 5px;
+    background-color: $goldcolor;
+    color: $whitefont;
+}
+
+.button__frame {
+    width: 300px;
+    height: 100px; 
+
+    && .--small {
+
+    }
+}
