@@ -1,6 +1,7 @@
 .navbar {
-    && .__list {
-     && .--category {
+    display: flex;
+    & .__list {
+     & .--category {
          color: $blackfont;
      }
     }

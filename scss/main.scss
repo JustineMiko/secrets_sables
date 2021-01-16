@@ -5,9 +5,14 @@
 @import 'base';
 
 /** Layouts **/
-@import 'layout/header';
-@import 'layout/footer';
+@import 'layout/_header';
+@import 'layout/_footer';
 
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import "../node_modules/normalize.css/normalize.css"; 
 
 /* variables de couleur */ 
 $backgroundcolor: #FEFBEB;
@@ -16,22 +21,31 @@ $goldcolor: #BA8910;
 $whitefont: #FFFFFF; 
 
 
+
 /* Mobile first */
 
 body {
     background-color: $backgroundcolor;
     color: $blackfont;
     font-family: 'Lato', sans-serif;
+    text-align: center;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Dancing Script', cursive;
 }
 
-a, li {
+a {
     text-decoration: none;
+    outline: none;
+    color: $blackfont;
+}
+
+
+li {
     color: $blackfont;
     list-style-type: none;
+    text-decoration: none;
 
 }
 
@@ -39,13 +53,29 @@ button {
     border-radius: 5px;
     background-color: $goldcolor;
     color: $whitefont;
-}
 
-.button__frame {
-    width: 300px;
-    height: 100px; 
-
-    && .--small {
-
+    & .__frame {
+        width: 200px;
+        height: 200px;
     }
 }
+
+.about__pic {
+    clip-path: polygon(29% 0, 100% 0%, 100% 100%, 67% 100%);
+}
+
+.team {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+
+.services {
+    & .__picture {
+        height: 200px;
+        width: 300px;
+    }
+}
+
+
