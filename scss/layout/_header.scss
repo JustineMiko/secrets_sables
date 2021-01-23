@@ -1,3 +1,30 @@
-.navbar {
+.logo {
     display: flex;
+    justify-content: flex-start;
+    width: 50px;
+    height: 30px
+
+}
+
+
+.navbar {
+
+    &__list {
+        display: inline-flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+        &__list--category {
+            font-weight: bold;
+            font-size: 8px;
+            paddingleft: 150px;
+
+        }
+    
  }
+
+    © 2021 GitHub, Inc.
+    Terms
+    Privacy
+    Security

@@ -13,25 +13,31 @@
     <!-- header commun à toutes les pages -->
     <header>
         <div class="container">
-            <img src="./img/logo-min-1.png" alt="logo secrets sablés">
-            <div class="navbar">
-                <ul class="navbar__list">
-                    <li class="navbar__list--category"><a href="index.html">Accueil</a></li>
-                    <li class="navbar__list--category"><a href="about.html">L'Institut</a></li>
-                    <li class="navbar__list--category"><a href="">Nos Services</a></li>
-                    <li class="navbar__list--category"><a href="">Boutique en ligne</a></li>
-                    <li class="navbar__list--category"><a href="">Contact & rendez-vous</a></li>
-                    <li class="navbar__list--category"><a href=""><img src="https://img.icons8.com/ios-filled/20/000000/shopping-basket--v1.png"/></a></li>
-                    <!-- <a href="https://icons8.com/icon/8384/panier">Panier icon by Icons8</a> -->
-                </ul>
-            </div>
+            <nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+                <a class="navbar-brand" href="#"><img class="logo" src="./img/logo-min-1.png" alt="logo secrets sablés"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar__list navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="navbar__list--category nav-item active"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="navbar__list--category nav-item active"><a class="nav-link" href="about.html">L'Institut</a></li>
+                        <li class="navbar__list--category nav-item active"><a class="nav-link" href="#">Nos Services</a></li>
+                        <li class="navbar__list--category nav-item active"><a class="nav-link" href="#">Boutique en ligne</a></li>
+                        <li class="navbar__list--category nav-item active"><a class="nav-link" href="#">Contact & rendez-vous</a></li>
+                        <li class="navbar__list--category nav-item active"><a class="nav-link" href="#"><img src="https://img.icons8.com/ios-filled/15/000000/shopping-basket--v1.png"/></a></li>
+                        <!-- <a href="https://icons8.com/icon/8384/panier">Panier icon by Icons8</a> -->
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
 
     <!-- Section d'accueil avec vidéo en arrière plan -->
     <div class="container">
         <video autoplay muted loop src="https://www.youtube.com/embed/vou_hEcL1jc" class="backgroundvideo">
-        <div class="title">
+        </video>
+            <div class="title">
             <h1>Secrets Sablés</h1>
             <h2>Institut de Beauté</h2>
             <div class="button">
@@ -39,20 +45,25 @@
                 <button type="button" class="button__frame rounded-lg">Découvrir notre boutique en ligne</button>
             </div>
         </div>
-        </video>
+
     </div>
+
+    <!-- <div class="video-background">
+        <div class="video-foreground">
+          <iframe src="https://www.youtube.com/embed/vou_hEcL1jc" frameborder="0" allowfullscreen ></iframe>
+        </div> -->
+      </div>
 
     <!-- Section d'accueil à propos avec image géométrique -->
     <div class="container about">
-        <div class="about__left">
-            <h3>À propos de l'Institut</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatum accusantium, totam, repellat fuga possimus inventore quas repellendus aut odit cupiditate non officiis tenetur saepe! Vel explicabo eos at quam.
-                Fuga incidunt excepturi accusantium a, officia dicta quae sint amet error provident nostrum? Tempore repellat libero non voluptatibus ducimus, cupiditate aspernatur rerum dolores voluptate ea qui ullam, alias laudantium! Neque?
-                Laborum optio, dolore pariatur libero unde minus labore odio esse illum dignissimos corporis doloribus accusantium accusamus quae quos possimus voluptatem hic maiores. Quidem, consequatur officiis architecto autem labore recusandae molestiae.</p>
-                <button type="button" class="button__frame rounded">En savoir plus</button>
-        </div>
         <div class="about__pic">
-            <img src="./img/salon2.jpg" alt="sauna">
+            <div class="about__left">
+                <h3>À propos de l'Institut</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatum accusantium, totam, repellat fuga possimus inventore quas repellendus aut odit cupiditate non officiis tenetur saepe! Vel explicabo eos at quam.
+                    Fuga incidunt excepturi accusantium a, officia dicta quae sint amet error provident nostrum? Tempore repellat libero non voluptatibus ducimus, cupiditate aspernatur rerum dolores voluptate ea qui ullam, alias laudantium! Neque?
+                    Laborum optio, dolore pariatur libero unde minus labore odio esse illum dignissimos corporis doloribus accusantium accusamus quae quos possimus voluptatem hic maiores. Quidem, consequatur officiis architecto autem labore recusandae molestiae.</p>
+                    <button type="button" class="button__frame rounded">En savoir plus</button>
+            </div>
         </div>
     </div>
 
@@ -99,17 +110,17 @@
     <!-- Section notre équipe -->
     <div class="container team">
         <div class="team__picture">
-            <img src="./img/Louise.png" class="rounded-pill" alt="Louise">
+            <img src="./img/Louise.png" alt="Louise" class="team__picture--img">
             <h4>Louise</h4>
             <p>Poste</p>
         </div>
         <div class="team__picture">
-            <img src="./img/Eloïse.png" alt="Eloïse" class="rounded-pill">
+            <img src="./img/Eloïse.png" alt="Eloïse" class="team__picture--img">
             <h4>Eloïse</h4>
             <p>Poste</p>
         </div>
         <div class="team__picture">
-            <img src="./img/Manon.png" alt="Manon" class="rounded-pill">
+            <img src="./img/Manon.png" alt="Manon" class="team__picture--img">
             <h4>Manon</h4>
             <p>Poste</p>
         </div>
