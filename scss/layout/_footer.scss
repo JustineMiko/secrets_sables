@@ -1,0 +1,27 @@
+.social {
+    font-family: lato;
+    color: $blackfont;
+}
+
+.footernav {
+
+    &__list {
+        display: inline-flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    
+    }
+
+        &__list--category {
+            font-weight: bold;
+            font-size: 8px;
+            padding-right: 5px;
+
+        }
+    
+ }
+
+ .copyright {
+     font-size: 10px;
+     font-family: lato;
+ }
