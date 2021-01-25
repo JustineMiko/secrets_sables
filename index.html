@@ -22,10 +22,17 @@
                     <ul class="navbar__list navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="navbar__list--category nav-item active"><a class="nav-link" href="index.html">Accueil</a></li>
                         <li class="navbar__list--category nav-item active"><a class="nav-link" href="about.html">L'Institut</a></li>
+<<<<<<< HEAD
                         <li class="navbar__list--category nav-item active"><a class="nav-link" href="#">Nos Services</a></li>
                         <li class="navbar__list--category nav-item active"><a class="nav-link" href="#">Boutique en ligne</a></li>
                         <li class="navbar__list--category nav-item active"><a class="nav-link" href="#">Contact & rendez-vous</a></li>
                         <li class="navbar__list--category nav-item active"><a class="nav-link" href="#"><img src="https://img.icons8.com/ios-filled/15/000000/shopping-basket--v1.png"/></a></li>
+=======
+                        <li class="navbar__list--category nav-item active"><a class="nav-link" href="services.html">Nos Services</a></li>
+                        <li class="navbar__list--category nav-item active"><a class="nav-link" href="shop.html">Boutique en ligne</a></li>
+                        <li class="navbar__list--category nav-item active"><a class="nav-link" href="contact.html">Contact & rendez-vous</a></li>
+                        <li class="navbar__list--category nav-item active"><a class="nav-link" href="order.html"><img src="https://img.icons8.com/ios-filled/15/000000/shopping-basket--v1.png"/></a></li>
+>>>>>>> Ju
                         <!-- <a href="https://icons8.com/icon/8384/panier">Panier icon by Icons8</a> -->
                     </ul>
                 </div>
@@ -34,6 +41,7 @@
     </header>
 
     <!-- Section d'accueil avec vidéo en arrière plan -->
+<<<<<<< HEAD
     <div class="container">
         <video autoplay muted loop src="https://www.youtube.com/embed/vou_hEcL1jc" class="backgroundvideo">
         </video>
@@ -46,6 +54,23 @@
             </div>
         </div>
 
+=======
+    <div class="container-fluid">
+        <section class="video">
+            <video autoplay muted loop class="backgroundvideo">
+                <!-- adapter le type de video pour prise en charge tous navigateurs -->
+                <source src="secrets-sablés.mov" type="video/webm">
+            </video>
+                <div class="title">
+                <h1>Secrets Sablés</h1>
+                <h2>Institut de Beauté</h2>
+                <div class="button">
+                    <button type="button" class="button__frame rounded-lg">Réserver</button>
+                    <button type="button" class="button__frame rounded-lg">Boutique en ligne</button>
+                </div>
+            </div>
+        </section>
+>>>>>>> Ju
     </div>
 
     <!-- <div class="video-background">
@@ -57,6 +82,7 @@
     <!-- Section d'accueil à propos avec image géométrique -->
     <div class="container about">
         <div class="about__pic">
+<<<<<<< HEAD
             <div class="about__left">
                 <h3>À propos de l'Institut</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatum accusantium, totam, repellat fuga possimus inventore quas repellendus aut odit cupiditate non officiis tenetur saepe! Vel explicabo eos at quam.
@@ -64,46 +90,67 @@
                     Laborum optio, dolore pariatur libero unde minus labore odio esse illum dignissimos corporis doloribus accusantium accusamus quae quos possimus voluptatem hic maiores. Quidem, consequatur officiis architecto autem labore recusandae molestiae.</p>
                     <button type="button" class="button__frame rounded">En savoir plus</button>
             </div>
+=======
+                <div class="about__pic--left">
+                    <h3>À propos de l'Institut</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatum accusantium, totam, repellat fuga possimus inventore quas repellendus aut odit cupiditate non officiis tenetur saepe! Vel explicabo eos at quam.
+                        Fuga incidunt excepturi accusantium a, officia dicta quae sint amet error provident nostrum? Tempore repellat libero non voluptatibus ducimus, cupiditate aspernatur rerum dolores voluptate ea qui ullam, alias laudantium! Neque?
+                        Laborum optio, dolore pariatur libero unde minus labore odio esse illum dignissimos corporis doloribus accusantium accusamus quae quos possimus voluptatem hic maiores. Quidem, consequatur officiis architecto autem labore recusandae molestiae.</p>
+                        <button type="button" class="button__frame rounded">En savoir plus</button>
+                </div>
+>>>>>>> Ju
         </div>
     </div>
 
     <!-- Section d'accueil nos services -->
     <div class="container">
         <h3>Nos Services</h3>
-        <div class="services">
-            <img src="./img/cire.jpg" alt="cire épilation" class="services__picture">
-            <h4>Épilations</h4>
-            <button type="button" class="button__frame rounded">En savoir plus</button>
+            <div class="services card" style="width: 18rem;">
+                <img src="./img/cire.jpg" alt="cire épilation" class="services__picture card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">Épilations</h4>
+                    <button type="button" class="button__frame rounded">En savoir plus</button>
+                </div>
         </div>
 
-        <div>
-            <img src="./img/jolispieds.jpg" alt="soins des pieds" class="services__picture">
-            <h4>Soins des pieds</h4>
-            <button type="button" class="button__frame rounded-lg">En savoir plus</button>
+        <div class="services card" style="width: 18rem;">
+            <img src="./img/jolispieds.jpg" alt="soins des pieds" class="services__picture card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">Soins des pieds</h4>
+                <button type="button" class="button__frame rounded-lg">En savoir plus</button>
+            </div>
         </div>
 
-        <div>
-            <img src="./img/image00004.jpeg" alt="maquillages couleur caramel" class="services__picture">
-            <h4>Maquillage</h4>
-            <button type="button" class="button__frame rounded-lg">En savoir plus</button>
+        <div class="services card" style="width: 18rem;">
+            <img src="./img/image00004.jpeg" alt="maquillages couleur caramel" class="services__picture card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">Maquillage</h4>
+                <button type="button" class="button__frame rounded-lg">En savoir plus</button>
+            </div>
         </div>
 
-        <div>
-            <img src="./img/image.png" alt="massage 4 mains" class="services__picture">
-            <h4>Massages</h4>
-            <button type="button" class="button__frame rounded-lg">En savoir plus</button>
+        <div class="services card" style="width: 18rem;">
+            <img src="./img/image.png" alt="massage 4 mains" class="services__picture card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">Massages</h4>
+                <button type="button" class="button__frame rounded-lg">En savoir plus</button>
+            </div>
         </div>
 
-        <div>
-            <img src="./img/618842-T.png" alt="vernis à ongles" class="services__picture">
-            <h4>Les ongles</h4>
-            <button type="button" class="button__frame rounded-lg">En savoir plus</button>
+        <div class="services card" style="width: 18rem;">
+            <img src="./img/618842-T.png" alt="vernis à ongles" class="services__picture card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">Les ongles</h4>
+                <button type="button" class="button__frame rounded-lg">En savoir plus</button>
+            </div>
         </div>
 
-        <div>
-            <img src="./img/institut.jpg" alt="serviette fleur de cerisier" class="services__picture">
-            <h4>Soins du visage</h4>
-            <button type="button" class="button__frame rounded-lg">En savoir plus</button>
+        <div class="services card" style="width: 18rem;">
+            <img src="./img/institut.jpg" alt="serviette fleur de cerisier" class="services__picture card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">Soins du visage</h4>
+                <button type="button" class="button__frame rounded-lg">En savoir plus</button>
+            </div>
         </div>
     </div>
 
@@ -157,7 +204,7 @@
             <div class="card-body">
             <h5 class="card-title">Base lissante Couleur Caramel</h5>
             <p class="card-text">Prix €</p>
-            <a href=""><img src="https://img.icons8.com/ios-filled/20/000000/shopping-basket--v1.png"/>
+            <a href=""><img src="https://img.icons8.com/ios-filled/20/000000/shopping-basket--v1.png"/></a>
         <!-- <a href="https://icons8.com/icon/8384/panier">Panier icon by Icons8</a> -->        
             </div>
         </div>
@@ -168,23 +215,24 @@
     <!-- footer commun à toutes les pages -->
     <footer>
         <div class="container">
-            <p>Suivez-nous sur les réseaux sociaux</p>
-            <div>
-                <a href=""><img src="https://img.icons8.com/ios-filled/50/000000/facebook.png"/></a>
-                <!-- <a href="https://icons8.com/icon/8818/facebook">Facebook icon by Icons8</a> -->
-                <a href=""><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png"/></a>
-                <!-- <a href="https://icons8.com/icon/32309/instagram">Instagram icon by Icons8</a> -->
-            </div>
-            <div class="navbar">
-                <ul class="navbar__list">
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="">L'Institut</a></li>
-                    <li><a href="">Nos Services</a></li>
-                    <li><a href="">Boutique en ligne</a></li>
-                    <li><a href="">Contact & rendez-vous</a></li>
+            <h4>Suivez-nous sur les réseaux sociaux</h4>
+                <div>
+                    <a><img src="https://img.icons8.com/ios-filled/50/000000/facebook.png"/></a>
+                    <!-- <a href="https://icons8.com/icon/8818/facebook">Facebook icon by Icons8</a> -->
+                    <a><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png"/></a>
+                    <!-- <a href="https://icons8.com/icon/32309/instagram">Instagram icon by Icons8</a> -->
+                </div>
+
+            <div class="footernav">
+                <ul class="footernav__list">
+                    <li class="footernav__list--category "><a href="index.html">Accueil</a></li>
+                    <li class="footernav__list--category "><a href="about.html">L'Institut</a></li>
+                    <li class="footernav__list--category "><a href="services.html">Nos Services</a></li>
+                    <li class="footernav__list--category "><a href="shop.html">Boutique en ligne</a></li>
+                    <li class="footernav__list--category "><a href="contact.html">Contact & rendez-vous</a></li>
                 </ul>
             </div>
-            <p>&copy 2021 Secrets Sablés</p>
+            <p class="copyright">&copy; 2021 Secrets Sablés - <a href="legal.html">Mentions légales - CGV - CGU</a></p>
         </div>
     </footer>
   

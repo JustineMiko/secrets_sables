@@ -59,6 +59,7 @@ button {
     }
 }
 
+<<<<<<< HEAD
 // background-video home page
 // .video-background {
 //     top: 0; right: 0; bottom: 0; left: 0;
@@ -78,6 +79,51 @@ button {
 .about__pic {
     background-image: url("https://zupimages.net/viewer.php?id=21/03/1ppg.jpg");
     // -webkit-clip-path: polygon(29% 0, 100% 0%, 100% 100%, 67% 100%);
+=======
+.video {
+    position: relative;
+    height:300px;
+    width:100%;
+
+
+.backgroundvideo {
+    position: absolute;
+    max-width: 360
+    height: auto;
+    z-index: -100;
+}
+
+
+//About section
+.about {
+    position: absolute;
+    transform: polygon(29% 0, 100% 0%, 100% 100%, 67% 100%);
+    overflow: hidden;
+
+    &__pic{
+        -webkit-clip-path: polygon(29% 0, 100% 0%, 100% 100%, 67% 100%);
+
+    }
+        &--left {
+            position: relative;
+            background: url("https://zupimages.net/viewer.php?id=21/03/1ppg.jpg");
+            overflow: hidden;
+            background-size: contain;
+        }
+}
+
+
+//Services section
+
+.services {
+    width: 360px;
+    height: 330px;
+
+    &__picture {
+        // width: 300px;
+        // height: 200px;
+    }
+>>>>>>> Ju
 }
 
 .team {
@@ -88,7 +134,11 @@ button {
 }
 
 .team__picture--img {
+<<<<<<< HEAD
     border-radius: 50%;
+=======
+    border-radius: 100%;
+>>>>>>> Ju
     width: 90px;
     height: 90px;
 }
@@ -106,4 +156,7 @@ button {
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> Ju
