@@ -1,8 +1,8 @@
-.logo {
+.logo, .navbar-brand {
     display: flex;
     justify-content: flex-start;
-    width: 100px;
-    height: 50px
+    width: 150px;
+    height: 100px
 
 }
 
@@ -24,3 +24,12 @@
     
  }
 
+ .navbar-toggler {
+    color: $navbar-light-color;
+    border-color: $navbar-light-toggler-border-color;
+  }
+
+  .navbar-toggler:active {
+    color: $navbar-light-color;
+    border-color: $navbar-light-toggler-border-color;
+  }
