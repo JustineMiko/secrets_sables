@@ -1,13 +1,9 @@
-.logo {
+.logo, .navbar-brand {
     display: flex;
     justify-content: flex-start;
-<<<<<<< HEAD
-    width: 50px;
-    height: 30px
-=======
-    width: 100px;
-    height: 50px
->>>>>>> Ju
+    width: 150px;
+    height: 100px
+
 
 }
 
@@ -23,17 +19,20 @@
         &__list--category {
             font-weight: bold;
             font-size: 8px;
-<<<<<<< HEAD
-            paddingleft: 150px;
-
-        }
-    
- }
-=======
             padding-left: 150px;
 
         }
     
  }
 
->>>>>>> Ju
+
+ .navbar-toggler {
+    color: $navbar-light-color;
+    border-color: $navbar-light-toggler-border-color;
+  }
+
+  .navbar-toggler:active {
+    color: $navbar-light-color;
+    border-color: $navbar-light-toggler-border-color;
+  }
+
