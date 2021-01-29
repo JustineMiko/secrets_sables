@@ -1,0 +1,125 @@
+/* Mobile first */
+
+body {
+    background-color: $backgroundcolor;
+    color: $blackfont;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Dancing Script', cursive;
+}
+
+h6 {
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    outline: none;
+    color: $blackfont;
+}
+
+
+li {
+    color: $blackfont;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+button {
+    border-radius: 5px;
+    background-color: $goldcolor;
+    color: $whitefont;
+
+    & .__frame {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.video {
+    position: relative;
+
+
+
+.backgroundvideo {
+    position: absolute;
+    width: 100px !important;
+    height: auto !important;
+    z-index: -100;
+
+}
+
+
+//About section
+.about {
+    position: absolute;
+    transform: polygon(29% 0, 100% 0%, 100% 100%, 67% 100%);
+    overflow: hidden;
+
+    &__pic{
+        -webkit-clip-path: polygon(29% 0, 100% 0%, 100% 100%, 67% 100%);
+
+    }
+        &--left {
+            position: relative;
+            background: url("https://zupimages.net/viewer.php?id=21/03/1ppg.jpg");
+            overflow: hidden;
+            background-size: contain;
+        }
+}
+
+
+//Services section
+
+.services {
+    width: 360px;
+    height: 330px;
+
+    &__picture {
+        // width: 300px;
+        // height: 200px;
+    }
+}
+
+.team {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+
+.team__picture--img {
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+}
+
+.services {
+    & .__picture {
+        height: 200px;
+        width: 300px;
+    }
+}
+
+.card {
+    border: solid;
+
+}
+
+.price {
+    background-color: $goldcolor;
+    color: $whitefont;
+    width: 200px;
+    height: 50px;
+    border: solid;
+    border-radius: 5px;
+}
+
+.service__img {
+    height: 50px;
+    width: 100px;;
+}
