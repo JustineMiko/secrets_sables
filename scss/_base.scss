@@ -43,6 +43,8 @@ button {
 .video {
     position: relative;
 
+}
+
 
 
 .backgroundvideo {
@@ -61,7 +63,7 @@ button {
     overflow: hidden;
 
     &__pic{
-        -webkit-clip-path: polygon(29% 0, 100% 0%, 100% 100%, 67% 100%);
+        clip-path: polygon(29% 0, 100% 0%, 100% 100%, 67% 100%);
 
     }
         &--left {
@@ -73,16 +75,12 @@ button {
 }
 
 
-//Services section
+//Services section page d'accueil
 
 .services {
     width: 360px;
     height: 330px;
 
-    &__picture {
-        // width: 300px;
-        // height: 200px;
-    }
 }
 
 .team {
@@ -98,6 +96,7 @@ button {
     height: 90px;
 }
 
+//images services page d'accueil index.html
 .services {
     & .__picture {
         height: 200px;
@@ -110,16 +109,19 @@ button {
 
 }
 
+//page services 
+
 .price {
     background-color: $goldcolor;
     color: $whitefont;
-    width: 200px;
-    height: 50px;
+    width: 180px;
+    height: 30px;
     border: solid;
     border-radius: 5px;
 }
 
+
+//images des services page services.html
 .service__img {
-    height: 50px;
     width: 100px;;
 }
