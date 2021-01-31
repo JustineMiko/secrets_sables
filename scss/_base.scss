@@ -42,25 +42,28 @@ button {
 
 .video {
     position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    height: 0;
+    overflow: hidden;
+
+    &__background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
 }
-
-
-
-.backgroundvideo {
-    position: absolute;
-    width: 100px !important;
-    height: auto !important;
-    z-index: -100;
-
-}
-
 
 //About section
 .about {
     position: absolute;
     transform: polygon(29% 0, 100% 0%, 100% 100%, 67% 100%);
     overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 2px;;
 
     &__pic{
         clip-path: polygon(29% 0, 100% 0%, 100% 100%, 67% 100%);
@@ -107,6 +110,21 @@ button {
 .card {
     border: solid;
 
+}
+
+// fiche produit page d'accueil
+
+.bestseller {
+    width: 250px;
+    border: 2rem solid $blackfont;
+    &__card {
+        border: 2rem solid $goldcolor;
+        width: 200px;
+        &--img {
+            width: 150%;
+
+        }
+    }
 }
 
 //page services 

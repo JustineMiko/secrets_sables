@@ -8,7 +8,7 @@
     <meta name="description" content="Secrets sablés est un institut de beauté de standing situé à proximité de Lille dans la commune de Wattignies">
 
 </head>
-<body>
+<body class="container-fluid">
 
     <!-- header commun à toutes les pages -->
 <header>
@@ -37,11 +37,11 @@
 <!-- Section d'accueil avec vidéo en arrière plan -->
 <div class="container-fluid">
     <section class="video container-fluid">
-        <video autoplay muted loop class="backgroundvideo">
+        <video autoplay muted loop class="video__background min-vh-100 min-vw-100">
             <!-- adapter le type de video pour prise en charge tous navigateurs -->
             <source src="secrets-sablés.mov" type="video/webm">
         </video>
-            <div class="title">
+            <div class="title card-img-overlay d-flex h-50 flex-column my-auto align-items-center justify-content-center text-center text-white">
             <h1>Secrets Sablés</h1>
             <h2>L'institut qui vous fait voyager</h2>
             <div class="button">
@@ -59,7 +59,7 @@
     </div>
 
 <!-- Section d'accueil à propos avec image géométrique -->
-<div class="container about">
+<section class="container about">
     <div class="about__pic">
             <div class="about__pic--left">
                 <h3>À propos de l'Institut</h3>
@@ -71,7 +71,7 @@
                     <button type="button" class="button__frame rounded">En savoir plus</button>
             </div>
     </div>
-</div>
+</section>
 
 <!-- Section d'accueil nos services -->
 <div class="container">
@@ -145,11 +145,27 @@
 </div>
 
 <!-- Section meilleures ventes -->
-<div class="bestseller">
-    <div class="card" style="width: 18rem;">
-        <div class="card__border">
-        <img class="card-img-top" src="img/baselissante.png" alt="Card image cap">
+<div class="container">
+    <div class="bestseller">
+        <div class="bestseller__card">
+            <img class="bestseller__card--img" src="img/baselissante.png" alt="Card image cap">
         </div>
+        <div class="bestseller__card--text">
+            <h5>Base lissante Couleur Caramel</h5>
+            <p>prix</p>
+            <a href=""><img src="https://img.icons8.com/ios-filled/20/000000/shopping-basket--v1.png"/>
+                <!-- <a href="https://icons8.com/icon/8384/panier">Panier icon by Icons8</a> -->   
+        </div>
+    </div>
+</div>
+
+<div class="bestseller">
+    <div class="card bestseller__card border-dark mb-3" style="width: 18rem;">
+        <span class="border border-warning">
+        <div class="card__border">
+        <img class="card-img" src="img/baselissante.png" alt="Card image cap">
+        </div>
+        </span>
         <div class="card-body">
         <h5 class="card-title">Base lissante Couleur Caramel</h5>
         <p class="card-text">Prix €</p>
@@ -210,6 +226,7 @@
   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 </body>
 </html>
