@@ -94,7 +94,6 @@ button {
 }
 
 .team__picture--img {
-    border-radius: 100%;
     width: 90px;
     height: 90px;
 }
@@ -103,7 +102,7 @@ button {
 .services {
     & .__picture {
         height: 200px;
-        width: 300px;
+        border-radius: 5px;
     }
 }
 
