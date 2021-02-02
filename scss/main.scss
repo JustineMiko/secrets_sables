@@ -7,6 +7,8 @@
 /** Layouts **/
 @import 'layout/_header';
 @import 'layout/_footer';
+@import 'layout/_components'; 
+
 
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
@@ -14,9 +16,4 @@
 
 @import "../node_modules/normalize.css/normalize.css"; 
 
-/* variables de couleur */ 
-$backgroundcolor: #FEFBEB;
-$blackfont: #000000;
-$goldcolor: #BA8910;
-$whitefont: #FFFFFF; 
 
