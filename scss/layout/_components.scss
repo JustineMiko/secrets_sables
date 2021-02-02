@@ -1,0 +1,144 @@
+/* Mobile first */
+
+body {
+    background-color: $backgroundcolor;
+    color: $blackfont;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Dancing Script', cursive;
+}
+
+h6 {
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    outline: none;
+    color: $blackfont;
+}
+
+
+li {
+    color: $blackfont;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+button {
+    border-radius: 5px;
+    background-color: $goldcolor;
+    color: $whitefont;
+
+    & .__frame {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    height: 0;
+    overflow: hidden;
+
+    &__background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+}
+
+//About section
+.about {
+    position: absolute;
+    transform: polygon(29% 0, 100% 0%, 100% 100%, 67% 100%);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 2px;;
+
+    &__pic{
+        clip-path: polygon(29% 0, 100% 0%, 100% 100%, 67% 100%);
+
+    }
+        &--left {
+            position: relative;
+            background: url("https://zupimages.net/viewer.php?id=21/03/1ppg.jpg");
+            overflow: hidden;
+            background-size: contain;
+        }
+}
+
+
+//Services section page d'accueil
+
+.services {
+    width: 360px;
+    height: 330px;
+
+}
+
+.team {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+
+.team__picture--img {
+    width: 90px;
+    height: 90px;
+}
+
+//images services page d'accueil index.html
+.services {
+    & .__picture {
+        height: 200px;
+        border-radius: 5px;
+    }
+}
+
+.card {
+    border: solid;
+
+}
+
+// fiche produit page d'accueil
+
+.bestseller {
+    width: 250px;
+    border: 2rem solid $blackfont;
+    &__card {
+        border: 2rem solid $goldcolor;
+        width: 200px;
+        &--img {
+            width: 150%;
+
+        }
+    }
+}
+
+//page services 
+
+.price {
+    background-color: $goldcolor;
+    color: $whitefont;
+    width: 180px;
+    height: 30px;
+    border: solid;
+    border-radius: 5px;
+}
+
+
+//images des services page services.html
+.service__img {
+    width: 100px;;
+}
