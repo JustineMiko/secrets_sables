@@ -134,7 +134,7 @@ button {
 
 .bestseller {
     width: 250px;
-    height 330px;
+    height: 330px;
     border: 3px solid $blackfont;
     border-radius: 5px;
     display: inline-flex;
@@ -172,4 +172,14 @@ button {
 //images des services page services.html
 .service__img {
     width: 100px;;
+}
+
+/* début des media querries
+* La vidéo d'accueil n'apparaitra qu'à partir de 1000px 
+* avant, ça affichera une background image
+*/
+
+@media screen and (min-width: 1000ps) {
+
+    
 }
