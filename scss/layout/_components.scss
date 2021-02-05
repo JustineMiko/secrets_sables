@@ -7,6 +7,11 @@ body {
     text-align: center;
 }
 
+section {
+    margin-top : 10px;
+    margin-bottom: 10px;;
+}
+
 h1, h2, h3, h4 {
     font-family: 'Dancing Script', cursive;
 }
@@ -26,7 +31,14 @@ li {
     color: $blackfont;
     list-style-type: none;
     text-decoration: none;
+    font-family: 'lato', sans-serif;
+    font-size: 14px;
 
+}
+
+p {
+    font-family: 'lato', sans-serif;
+    font-size: 14px;
 }
 
 button {
@@ -59,7 +71,6 @@ button {
 
 //About section
 .about {
-    position: absolute;
     transform: polygon(29% 0, 100% 0%, 100% 100%, 67% 100%);
     overflow: hidden;
     margin-top: 20px;
@@ -79,10 +90,18 @@ button {
 
 
 //Services section page d'accueil
+.service {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
 
 .services {
     width: 360px;
     height: 330px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
 }
 
@@ -115,12 +134,24 @@ button {
 
 .bestseller {
     width: 250px;
-    border: 2rem solid $blackfont;
+    height 330px;
+    border: 3px solid $blackfont;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    
     &__card {
-        border: 2rem solid $goldcolor;
+
+        border: 1px solid $goldcolor;
         width: 200px;
+        margin: 30px;
+        border-radius: 5px;
+       
         &--img {
-            width: 150%;
+            width: 150px;
+            height: 150px;
 
         }
     }
